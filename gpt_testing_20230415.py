@@ -43,10 +43,7 @@ def scrape_info(url):
 
 
 def scrape_raw_html(url):
-    proxy = {
-        'http':f'http://sp27389398:nowasteclub@us.smartproxy.com:10000',
-        'https':f'http://sp27389398:nowasteclub@us.smartproxy.com:10000'
-    }
+    proxy = {}
     # get html response   resp = requests.get(url[:url.find('?')], headers={
     resp = requests.get(url
         ,headers={
